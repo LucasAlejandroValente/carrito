@@ -46,6 +46,62 @@ p {
 };
 
 /******** components ********/
+/* cart */
+.shopping-cart{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    .cart-btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: 2px solid $base-color;
+        padding: 0;
+        background-color: $base-color-alt;
+        overflow: hidden;
+        transition: all .6s ease;
+
+        font-family: $font;
+        font-size: 1rem;
+
+        &:hover{
+            
+            background-color: $base-color;
+
+            svg {
+                transform: translateX(4rem);
+            };
+
+            p {
+                color: $base-color-alt;
+                transform: translateX(-4rem)
+            };
+        };
+
+        p {
+            transition: all .6s ease;
+            margin: 0;
+            padding: 0 1rem;
+            z-index: 2;
+        };
+
+        svg {
+            transition: all .6s ease;
+            fill: $base-color-alt ;
+            background-color: #000000
+        };
+    };
+};
+
+@media screen and (min-width: 576px) {
+    .shopping-cart .cart-btn:hover{
+        p {
+            transform: translateX(-2.5rem)
+        };
+    };
+};
+
 /* menu */
 .menu-btn {
     outline: none;
@@ -93,6 +149,7 @@ p {
     .menu-btn {
         display:none;
     };
+
     .menu {
         position: sticky;
         top: 0;
@@ -213,18 +270,8 @@ p {
 
 .catalogue-container {
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
     #products {
-        width: 80%;
         display: flex;
         justify-content: space-around;
-    };
-    
-    #cart {
-        width: 20%;
-        display: flex;
     };
 };

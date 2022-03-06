@@ -39,6 +39,68 @@ p {
 }
 
 /******** components ********/
+/* cart */
+.shopping-cart {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.shopping-cart .cart-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border: 2px solid #000000;
+  padding: 0;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  font-family: "Libre Bodoni", sans-serif;
+  font-size: 1rem;
+}
+
+.shopping-cart .cart-btn:hover {
+  background-color: #000000;
+}
+
+.shopping-cart .cart-btn:hover svg {
+  -webkit-transform: translateX(4rem);
+          transform: translateX(4rem);
+}
+
+.shopping-cart .cart-btn:hover p {
+  color: #FFFFFF;
+  -webkit-transform: translateX(-4rem);
+          transform: translateX(-4rem);
+}
+
+.shopping-cart .cart-btn p {
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  margin: 0;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.shopping-cart .cart-btn svg {
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  fill: #FFFFFF;
+  background-color: #000000;
+}
+
+@media screen and (min-width: 576px) {
+  .shopping-cart .cart-btn:hover p {
+    -webkit-transform: translateX(-2.5rem);
+            transform: translateX(-2.5rem);
+  }
+}
+
 /* menu */
 .menu-btn {
   outline: none;
@@ -235,31 +297,11 @@ p {
   font-size: 2rem;
 }
 
-.catalogue-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
 .catalogue-container #products {
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.catalogue-container #cart {
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
