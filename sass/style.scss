@@ -4,7 +4,7 @@ $font-size: calc(1.5vh + 1vw + 1%);
 $max-width: 1400px;
 $base-color: #000000;
 $base-color-alt: #FFFFFF;
-$base-color-alpha: rgba(0, 0, 0, 0.055);
+$base-color-alpha: rgba(0, 0, 0, 0.8);
 
 
 /******** reset ********/
@@ -100,6 +100,50 @@ p {
             transform: translateX(-2.5rem)
         };
     };
+};
+
+/* ventana modal */
+.cart-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.8);
+	transition: scale 0.1s linear;
+    transform: scale(0);
+
+
+    .cart {
+        position: relative;
+        height: 70%;
+        width: 80%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 4rem 0 4rem 0 ;
+
+        svg {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #ff0000;
+            fill: $base-color-alt;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #da1818
+            };
+        };
+    };
+};
+
+.cart-container.active {
+    transform: scale(1);
 };
 
 /* menu */

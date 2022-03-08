@@ -101,6 +101,65 @@ p {
   }
 }
 
+/* ventana modal */
+.cart-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: scale 0.1s linear;
+  transition: scale 0.1s linear;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.cart-container .cart {
+  position: relative;
+  height: 70%;
+  width: 80%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4rem 0 4rem 0;
+}
+
+.cart-container .cart svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ff0000;
+  fill: #FFFFFF;
+  cursor: pointer;
+}
+
+.cart-container .cart svg:hover {
+  background-color: #da1818;
+}
+
+.cart-container.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 /* menu */
 .menu-btn {
   outline: none;
@@ -141,7 +200,7 @@ p {
 }
 
 .menu a:hover {
-  background-color: rgba(0, 0, 0, 0.055);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .menu.is-active {
