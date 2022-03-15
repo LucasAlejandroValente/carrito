@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://fonts.cdnfonts.com/css/libre-bodoni" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Shopping cart</title>
+</head>
+<body>
+    <header class="header">
+        <section class="container">
+            <div class="logo"><a href="../index.html">PERFUMERÍA</a></div>
+            <button class="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+            </button>
+            <nav class="menu">
+                <a href="catalogue.html">Catálogo</a>
+                <a href="#">Lorem</a>
+                <a href="#">Lorem</a>
+                <a href="#">Lorem</a>
+                <a href="#">Lorem</a>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <div class="title container">
+            <div class="line"></div>
+            <h3 class="title-content">Productos</h3>
+            <div class="line"></div>
+        </div>
+
+        <div class="container catalogue-container">
+            <section id="products">
+                <div class="card">
+                    <div class="card-image">
+                    </div>
+                    <div class="card-text">
+                        <h5 class="item-name">Título 1</h5>
+                        <p class="price">$100</p>
+                    </div>
+                    <div class="card-btn" onclick="showAlert()"><button class="addToCart" type="button"><p>Add to cart</p></button></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                    </div>
+                    <div class="card-text">
+                        <h5 class="item-name">Título 2</h5>
+                        <p class="price">$500</p>
+                    </div>
+                    <div class="card-btn" onclick="showAlert()"><button class="addToCart" type="button"><p>Add to cart</p></button></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                    </div>
+                    <div class="card-text">
+                        <h5 class="item-name">Título 3</h5>
+                        <p class="price">$100</p>
+                    </div>
+                    <div class="card-btn" onclick="showAlert()"><button class="addToCart" type="button"><p>Add to cart</p></button></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                    </div>
+                    <div class="card-text">
+                        <h5 class="item-name">Título 4</h5>
+                        <p class="price">$600</p>
+                    </div>
+                    <div class="card-btn" onclick="showAlert()"><button class="addToCart" type="button"><p>Add to cart</p></button></div>
+                </div>
+
+            </section>
+        </div>
+        <div class="shopping-cart">
+            <button class="cart-btn" id="cart-btn"><svg xmlns="http://www.w3.org/2000/svg" width="64px"viewBox="0 0 512 512"><circle cx="176" cy="416" r="32"/><circle cx="400" cy="416" r="32"/><path d="M167.78 304h261.34l38.4-192H133.89l-8.47-48H32v32h66.58l48 272H432v-32H173.42l-5.64-32z"/></svg><p>Cart</p></button>
+        </div>
+        <div class="cart-container">
+            <div class="cart">
+                <svg id="cart-btn-close" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                <h3>Cart</h3>
+            </div>
+	    </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/sweetAlert.js"></script>
+</body>
+</html>

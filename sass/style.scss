@@ -46,6 +46,12 @@ p {
 };
 
 /******** components ********/
+
+/* alerts */
+.swal-text {
+    font-size: 1rem
+};
+
 /* cart */
 .shopping-cart{
     position: fixed;
@@ -316,6 +322,8 @@ p {
 
     #products {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
     };
 };
+
