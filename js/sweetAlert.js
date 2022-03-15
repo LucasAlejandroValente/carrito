@@ -7,5 +7,6 @@ function showAlert(){Swal.fire({
     allowOutsideClick: true,
     allowEscapeKey: true,
     allowEnterKey: true,
+    backdrop: true
     })
 };
