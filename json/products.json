@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nombre": "Eau de Parfum Cher Onyx",
+        "precio": 3000,
+        "stock": 2,
+        "img": "223485_eau-de-parfum-cher-onyx-x-50-ml-cuaderno_imagen-1.webp"
+    },
+    {
+        "id": 2,
+        "nombre": "EDP Ciel Noir",
+        "precio": 1800,
+        "stock": 10,
+        "img": "201452_eau-de-parfum-ciel-noir-x-80-ml_imagen-1.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "EDP Prune Moï",
+        "precio": 2500,
+        "stock": 5,
+        "img": "128118_eau-de-parfum-moi-natural-spray-x-60-ml_imagen-1.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "EDT Benetton Sisterland Red Rose",
+        "precio": 3200,
+        "stock": 4,
+        "img": "220455_eau-de-toilette-benetton-sisterland-red-rose-x-80-ml_imagen-1.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "EDP Boos Intense Woman",
+        "precio": 5000,
+        "stock": 7,
+        "img": "211844_eau-de-parfum-boos-intense-woman-x-90-ml_imagen-1.jpg"
+    }
+]

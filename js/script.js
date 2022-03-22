@@ -35,6 +35,7 @@ window.onload = function(){
 
 /* cart */
 
+/*
 const CART = {
   KEY: 'carrito123',
   contents: [],
@@ -63,4 +64,30 @@ const CART = {
 
 document.addEventListener('DOMContentLoaded', ()=>{
   CART.init();
-});
+}); 
+*/
+
+/* fetch -- carrito */
+let divProductos = document.getElementById('products');
+
+async function getProducts(){
+  const response = await fetch('../json/products.json')
+  return response.json()
+};
+
+getProducts().then(products => {
+  products.forEach((producto => {
+    divProductos.innerHTML += `
+    <div class="card">
+      <div class="card-image">
+        <img src="../img/${producto.img}" alt="">
+      </div>
+      <div class="card-text">
+          <h5 class="item-name">${producto.nombre}</h5>
+          <p class="price">$${producto.precio}</p>
+      </div>
+      <div class="card-btn" onclick="showAlert()"><button class="addToCart" id="btn-${producto.id}" type="button"><p>Add to cart</p></button></div>
+    </div>
+    `
+  }))
+})

@@ -41,7 +41,7 @@ p {
 /******** components ********/
 /* alerts */
 .swal-text {
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 /* cart */
@@ -293,12 +293,13 @@ p {
 }
 
 .card .card-image {
-  background-image: url("https://via.placeholder.com/200");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 200px;
-  height: 150px;
+  height: 200px;
+}
+
+.card .card-image img {
+  width: 200px;
+  height: 200px;
 }
 
 .card .card-text h5 {

@@ -49,7 +49,7 @@ p {
 
 /* alerts */
 .swal-text {
-    font-size: 1rem
+    font-size: .85rem,
 };
 
 /* cart */
@@ -256,11 +256,11 @@ p {
     };
 
     .card-image{
-        background-image: url('https://via.placeholder.com/200');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 200px; height: 150px;
+        width: 200px; height: 200px;
+
+        img {
+            width: 200px; height: 200px;
+        };
     };
 
     .card-text{
