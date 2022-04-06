@@ -33,5 +33,40 @@
         "precio": 5000,
         "stock": 7,
         "img": "211844_eau-de-parfum-boos-intense-woman-x-90-ml_imagen-1.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "EDT Benetton Sisterland Red Rose",
+        "precio": 3200,
+        "stock": 4,
+        "img": "220455_eau-de-toilette-benetton-sisterland-red-rose-x-80-ml_imagen-1.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "EDT Benetton Sisterland Red Rose",
+        "precio": 3200,
+        "stock": 4,
+        "img": "220455_eau-de-toilette-benetton-sisterland-red-rose-x-80-ml_imagen-1.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "EDT Benetton Sisterland Red Rose",
+        "precio": 3200,
+        "stock": 4,
+        "img": "220455_eau-de-toilette-benetton-sisterland-red-rose-x-80-ml_imagen-1.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "EDT Benetton Sisterland Red Rose",
+        "precio": 3200,
+        "stock": 4,
+        "img": "220455_eau-de-toilette-benetton-sisterland-red-rose-x-80-ml_imagen-1.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "EDT Benetton Sisterland Red Rose",
+        "precio": 3200,
+        "stock": 4,
+        "img": "220455_eau-de-toilette-benetton-sisterland-red-rose-x-80-ml_imagen-1.jpg"
     }
 ]

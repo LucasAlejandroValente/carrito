@@ -38,6 +38,12 @@ p {
   display: none;
 }
 
+.responsive {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
 /******** components ********/
 /* alerts */
 .swal-text {
@@ -49,6 +55,7 @@ p {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  z-index: 999;
 }
 
 .shopping-cart .cart-btn {
@@ -131,6 +138,7 @@ p {
 
 .cart-container .cart {
   position: relative;
+  padding: 10px;
   height: 70%;
   width: 80%;
   background: #fff;
@@ -148,6 +156,7 @@ p {
 }
 
 .cart-container .cart svg {
+  z-index: 999;
   position: absolute;
   right: 0;
   top: 0;
@@ -158,6 +167,10 @@ p {
 
 .cart-container .cart svg:hover {
   background-color: #da1818;
+}
+
+.cart-container .cart .cartDisplay {
+  overflow-y: scroll;
 }
 
 .cart-container.active {
@@ -275,10 +288,13 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 0.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.5rem;
   padding: 0;
   border: 1px solid #000000;
-  width: 200px;
+  width: 300px;
   overflow: hidden;
   text-align: center;
   -webkit-transition: -webkit-box-shadow 0.3s;
@@ -293,17 +309,21 @@ p {
 }
 
 .card .card-image {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
 
 .card .card-image img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .card .card-text h5 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0.5rem;
 }
 
@@ -311,26 +331,50 @@ p {
   font-size: 1rem;
 }
 
-.card .card-btn {
+.card button {
+  width: 100%;
   border: none;
   background-color: #000000;
-}
-
-.card .card-btn button {
-  border: none;
-  background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+.card button p {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.card .card-btn button:hover {
+.card button:hover p {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
 /* cart item*/
+.cartItem--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 15px;
+  border-top: 2px solid #000000;
+  z-index: 1;
+}
+
+.cartItem--container .cartItem--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px;
+}
+
 /******** styles ********/
 .header {
   position: -webkit-sticky;

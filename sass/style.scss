@@ -45,6 +45,12 @@ p {
     display: none;
 };
 
+.responsive {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+};
+
 /******** components ********/
 
 /* alerts */
@@ -57,6 +63,7 @@ p {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
+    z-index: 999;
 
     .cart-btn {
         display: flex;
@@ -125,6 +132,7 @@ p {
 
     .cart {
         position: relative;
+        padding: 10px;
         height: 70%;
         width: 80%;
         background: #fff;
@@ -134,6 +142,7 @@ p {
         border-radius: 4rem 0 4rem 0 ;
 
         svg {
+            z-index: 999;
             position: absolute;
             right: 0;
             top: 0;
@@ -145,12 +154,17 @@ p {
                 background-color: #da1818
             };
         };
+
+        .cartDisplay {
+            overflow-y: scroll;
+        };
     };
 };
 
 .cart-container.active {
     transform: scale(1);
 };
+
 
 /* menu */
 .menu-btn {
@@ -243,10 +257,11 @@ p {
 .card {
     display: flex;
     flex-direction: column;
-    margin: 0 0.5rem;
+    justify-content: space-between;
+    margin: 0.5rem;
     padding: 0;
     border: 1px solid $base-color;
-    width: 200px;
+    width: 300px;
     overflow: hidden;
     text-align: center;
     transition: box-shadow 0.3s;
@@ -256,16 +271,18 @@ p {
     };
 
     .card-image{
-        width: 200px; height: 200px;
+        width: 300px; height: 300px;
 
         img {
-            width: 200px; height: 200px;
+            width: 100%;
+            align-self: center;
+            justify-self: center;
         };
     };
 
     .card-text{
         h5 {
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin: 0.5rem;
         };
         p {
@@ -273,26 +290,40 @@ p {
         };
     };
 
-    .card-btn{
-        border: none;
-        background-color: $base-color;
         
         button {
+            width: 100%;
             border: none;
-            background-color: transparent;
+            background-color: $base-color;
             color: $base-color-alt;
-
             cursor: pointer;
-            transition: all 0.3s ease;
 
-            &:hover{
+            p {
+                transition: all 0.3s ease;
+            };
+
+            &:hover p{
                 transform: scale(1.2)
             };
         };
-    };
 
 };
+
 /* cart item*/
+.cartItem--container{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 15px;
+    border-top: 2px solid $base-color;
+    z-index: 1;
+
+    .cartItem--info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5px;
+    };
+}
 
 /******** styles ********/
 .header {
