@@ -115,6 +115,38 @@ p {
     };
 };
 
+/* carousel */
+.swiper {
+    height: 660px;
+    z-index: 10!important;
+    
+    .swiper-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 11!important;
+
+            h2 {
+               background-color: rgba(241, 241, 241, 0.5);
+               padding: 10px; 
+               text-align: center;
+
+               span {
+                   display: block;
+                   line-height: 2;
+               };
+            };
+    };
+
+    .swiper-button-prev, .swiper-button-next, .swiper-pagination {
+        filter: brightness(0%);
+        z-index: 12!important;
+    };
+  }; 
+
 /* ventana modal */
 .cart-container {
 	position: fixed;
@@ -189,6 +221,7 @@ p {
     opacity: 0;
     transition: opacity 0.5s ease;
     pointer-events: none;
+    z-index: 999!important;
 
 
     a {
@@ -207,6 +240,7 @@ p {
 .menu.is-active {
     opacity: 1;
     pointer-events: auto;
+    z-index: 999;
 };
 
 @media screen and (min-width: 1024px) {
@@ -229,6 +263,7 @@ p {
             background-color: $base-color;
             padding: 0 1rem;
             border: none;
+            z-index: 999;
             &:hover{
                 background-color: $base-color;
             };
@@ -334,6 +369,7 @@ p {
     height: 4rem;
     background-color: $base-color;
     padding: 1rem;
+    z-index: 999!important;
 
     .container {
         display: flex;
@@ -358,3 +394,75 @@ p {
     };
 };
 
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2rem;
+    background-color: $base-color;
+    color: $base-color-alt;
+    .info-left { 
+        padding: 1rem;
+        text-align: center;
+    };
+    .info-right {
+        padding: 1rem;
+        text-align: center;
+    };
+};
+
+.marcas{
+    h2{
+        text-align: center;
+    };
+
+    .display{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .brand-container {
+            max-width: 200px;
+            img{
+                width: 100%
+            }
+        };
+    }
+};
+    
+.footer {
+    .footer-c {
+        text-align: center;
+        background-color: $base-color;
+        color: $base-color-alt;
+        padding: 0.5rem;
+
+        h5 {
+            margin: 0;
+        };
+    };
+
+    .footer-r {
+        text-align: center;
+    };
+};
+
+.buttons {
+    button {
+        cursor: pointer;
+        border: 2px solid $base-color;
+        font-family: $font;
+        font-size: 1rem;
+    };
+
+    .btn-restar {
+        background-color: $base-color-alt;
+        color: $base-color;
+    };
+
+    .btn-remover {
+        background-color: $base-color;
+        color: $base-color-alt;
+    };
+};

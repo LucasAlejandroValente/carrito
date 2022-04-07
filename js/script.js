@@ -2,7 +2,7 @@
 ((d) => {
     const btnMenu = d.querySelector(".menu-btn"),
       menu = d.querySelector(".menu");
-  
+
     btnMenu.addEventListener("click", (e) => {
       btnMenu.firstElementChild.classList.toggle("none");
       btnMenu.lastElementChild.classList.toggle("none");
@@ -17,3 +17,18 @@
       menu.classList.remove("is-active");
     });
 })(document);
+
+/* swiper.js */
+const swiper = new Swiper('.swiper', {
+
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});

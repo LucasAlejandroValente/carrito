@@ -36,37 +36,37 @@
     },
     {
         "id": 6,
-        "nombre": "EDT Benetton Sisterland Red Rose",
-        "precio": 3200,
-        "stock": 4,
-        "img": "220455_eau-de-toilette-benetton-sisterland-red-rose-x-80-ml_imagen-1.jpg"
+        "nombre": "Stronger with You EDT 100ml",
+        "precio": 17500,
+        "stock": 2,
+        "img": "119078-a-stronger-with-you-edt-100ml.jpg"
     },
     {
         "id": 7,
-        "nombre": "EDT Benetton Sisterland Red Rose",
-        "precio": 3200,
-        "stock": 4,
-        "img": "220455_eau-de-toilette-benetton-sisterland-red-rose-x-80-ml_imagen-1.jpg"
+        "nombre": "Very Good Girl EDT 100ml",
+        "precio": 6000,
+        "stock": 8,
+        "img": "139506_450.jpg"
     },
     {
         "id": 8,
-        "nombre": "EDT Benetton Sisterland Red Rose",
-        "precio": 3200,
-        "stock": 4,
-        "img": "220455_eau-de-toilette-benetton-sisterland-red-rose-x-80-ml_imagen-1.jpg"
+        "nombre": "Miss Dior EDP 100ml",
+        "precio": 12250,
+        "stock": 3,
+        "img": "139630_450.jpg"
     },
     {
         "id": 9,
-        "nombre": "EDT Benetton Sisterland Red Rose",
-        "precio": 3200,
+        "nombre": "Azzaro Sport EDT",
+        "precio": 8200,
         "stock": 4,
-        "img": "220455_eau-de-toilette-benetton-sisterland-red-rose-x-80-ml_imagen-1.jpg"
+        "img": "139719-a-sport-edt-100ml.jpg"
     },
     {
         "id": 10,
-        "nombre": "EDT Benetton Sisterland Red Rose",
-        "precio": 3200,
-        "stock": 4,
-        "img": "220455_eau-de-toilette-benetton-sisterland-red-rose-x-80-ml_imagen-1.jpg"
+        "nombre": "Costa Azzura EDP 100ml",
+        "precio": 20000,
+        "stock": 12,
+        "img": "140631_a_1.jpg"
     }
 ]

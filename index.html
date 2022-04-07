@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="http://fonts.cdnfonts.com/css/libre-bodoni" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Shopping cart</title>
@@ -19,20 +22,103 @@
                 <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
             </button>
             <nav class="menu">
+                <a href="/index.html">Inicio</a>
                 <a href="./pages/catalogue.html">Catálogo</a>
-                <a href="./pages/catalogue.html"">Lorem</a>
-                <a href="./pages/catalogue.html"">Lorem</a>
-                <a href="./pages/catalogue.html"">Lorem</a>
-                <a href="./pages/catalogue.html"">Lorem</a>
+                <a href="./pages/catalogue.html">Lorem</a>
+                <a href="./pages/catalogue.html">Lorem</a>
+                <a href="./pages/catalogue.html">Lorem</a>
             </nav>
         </section>
     </header>
     <main>
+        <div class="swiper">
 
+            <div class="swiper-wrapper">
+
+            <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1514348871858-1d3c20902571?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);"><h2>Los mejores perfumes importados.</h2></div>
+            <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1458538977777-0549b2370168?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80);"><h2>Fragancias exclusivas para hombres y mujeres.</h2></div>
+            <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1615108395437-df128ad79e80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);"><h2>Nueva fragancia <span>CAROLINA HERRERA</span></h2></div>
+            
+            </div>
+            <div class="swiper-pagination"></div>
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
     </main>
+    <div class="info-section">
+        <div class="info-left">
+            <div class="promo_img" data-aos="fade-up">
+                <div class="promo_card shadow">
+                    <span></span>
+                    <div class="img_box">
+                        <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" width="300px"alt="">
+                    </div>
+                    <div class="card_content">
+                        <div>
+                            <h6>
+                                PROMO 15% OFF
+                            </h6>
+                            <p>En todas las fragancias Versace</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-right">
+            <div class="promo_img" data-aos="fade-up">
+                <div class="promo_card shadow">
+                    <span></span>
+                    <div class="img_box">
+                        <img src="https://images.unsplash.com/photo-1512303500391-74e5b8c3c07f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1460&q=80" width="300px"alt="">
+                    </div>
+                    <div class="card_content">
+                        <div>
+                            <h6>
+                                NUEVA FRAGANCIA
+                            </h6>
+                            <p>Valentino Uomo 50ml</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="marcas">
+        <h2>Marcas destacadas</h2>
+        <div class="display">
+            <div class="brand-container">
+                <img src="./img/yves.jpg" alt="">
+            </div>
+            <div class="brand-container">
+                <img src="./img/prada.jpg" alt="">
+            </div>
+            <div class="brand-container">
+                <img src="./img/givenchy.jpg" alt="">
+            </div>
+            <div class="brand-container">
+                <img src="./img/dior.png" alt="">
+            </div>
+        </div>
+    </div>
 
+    <footer class="footer">
+        <div class="footer-c">
+            <h5>Perfumería©.</h5>
+        </div>
+        <div class="footer-r">
+            <h5>Todos los derechos reservados 2022.</h5>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/sweetAlert.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

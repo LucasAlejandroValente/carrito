@@ -113,6 +113,45 @@ p {
   }
 }
 
+/* carousel */
+.swiper {
+  height: 660px;
+  z-index: 10 !important;
+}
+
+.swiper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11 !important;
+}
+
+.swiper .swiper-slide h2 {
+  background-color: rgba(241, 241, 241, 0.5);
+  padding: 10px;
+  text-align: center;
+}
+
+.swiper .swiper-slide h2 span {
+  display: block;
+  line-height: 2;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next, .swiper .swiper-pagination {
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
+  z-index: 12 !important;
+}
+
 /* ventana modal */
 .cart-container {
   position: fixed;
@@ -207,6 +246,7 @@ p {
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
   pointer-events: none;
+  z-index: 999 !important;
 }
 
 .menu a {
@@ -224,6 +264,7 @@ p {
 .menu.is-active {
   opacity: 1;
   pointer-events: auto;
+  z-index: 999;
 }
 
 @media screen and (min-width: 1024px) {
@@ -249,6 +290,7 @@ p {
     background-color: #000000;
     padding: 0 1rem;
     border: none;
+    z-index: 999;
   }
   .menu a:hover {
     background-color: #000000;
@@ -385,6 +427,7 @@ p {
   height: 4rem;
   background-color: #000000;
   padding: 1rem;
+  z-index: 999 !important;
 }
 
 .header .container {
@@ -414,5 +457,84 @@ p {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.info-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  padding: 2rem;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.info-section .info-left {
+  padding: 1rem;
+  text-align: center;
+}
+
+.info-section .info-right {
+  padding: 1rem;
+  text-align: center;
+}
+
+.marcas h2 {
+  text-align: center;
+}
+
+.marcas .display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.marcas .display .brand-container {
+  max-width: 200px;
+}
+
+.marcas .display .brand-container img {
+  width: 100%;
+}
+
+.footer .footer-c {
+  text-align: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 0.5rem;
+}
+
+.footer .footer-c h5 {
+  margin: 0;
+}
+
+.footer .footer-r {
+  text-align: center;
+}
+
+.buttons button {
+  cursor: pointer;
+  border: 2px solid #000000;
+  font-family: "Libre Bodoni", sans-serif;
+  font-size: 1rem;
+}
+
+.buttons .btn-restar {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.buttons .btn-remover {
+  background-color: #000000;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
